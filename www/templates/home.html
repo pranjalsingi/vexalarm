@@ -1,0 +1,38 @@
+<ion-view view-title="Home">
+  <ion-content class="padding">
+		<!-- <div class="padding">
+			<a href="#">
+				<button class="button button-positive" ng-click="play()">Play</button>
+			</a>
+			<a href="#">
+				<button class="button button-balanced" ng-click="stop()">Stop</button>
+			</a>
+		</div>
+  -->
+    <h2>Hello {{name}}</h2>
+		<div class="list card">
+
+			<div class="item item-avatar">
+				<div class="row">
+					<div class="col col-60 col-offset-20">
+						<button class="button button-royal button-block" ng-click="setTime()">Set Alarm</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="item item-body">
+				<p class="text-center" ng-show="selectedTime != ''">Alarm rings at : {{selectedTime.getUTCHours()}}H : {{selectedTime.getUTCMinutes()}}M</p>
+        <p class="text-center" ng-hide="selectedTime != ''">No alarm set up</p>
+			</div>
+		</div>
+    <div class="card">
+      <div class="item item-avatar">
+        <h3 class="text-center">How would you like to wake?</h3>
+			</div>
+      <ion-list ng-click="choose(choice)">
+        <ion-radio ng-model="choice" value="arith">Solve arithmetic problem</ion-radio>
+        <ion-radio ng-model="choice" value="twilio">Receive a call</ion-radio>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-view>

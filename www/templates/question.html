@@ -1,0 +1,19 @@
+<ion-view view-title="Questions">
+  <ion-content class="padding">
+    <div class="list">
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Question</span>
+        <input type="text" placeholder="Question" ng-model="ques">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Answer</span>
+        <input type="text" placeholder="Answer" ng-model="answer">
+      </label>
+    </div>
+    <div class="row">
+      <div class="col col-60 col-offset-20">
+        <button class="button button-royal button-block" ng-click="check(ques, answer)">Check Answer</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

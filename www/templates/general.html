@@ -1,0 +1,19 @@
+<ion-view view-title="General">
+  <ion-content class="padding">
+    <div class="list">
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Hello! Your name?</span>
+        <input type="text" placeholder="Name" ng-model="name">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Your Phone Number?</span>
+        <input type="number" placeholder="Number" ng-model="number">
+      </label>
+    </div>
+    <div class="row">
+      <div class="col col-60 col-offset-20">
+        <button class="button button-royal button-block" ng-click="check(name, number)">Submit</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
